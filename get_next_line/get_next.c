@@ -15,6 +15,7 @@ char    *ft_strdup(char *str)
         new[i] = str[i];
         i++;
     }
+    new[i] = '\0';
     return (new);
 }
 
@@ -47,6 +48,7 @@ char *get_next_line(int fd)
         return (NULL);
     return (ft_strdup(line));
 }
+
 
 int main()
 {
